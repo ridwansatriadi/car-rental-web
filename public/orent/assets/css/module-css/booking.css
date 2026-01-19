@@ -1,0 +1,373 @@
+/*--------------------------------------------------------------
+# Booking One
+--------------------------------------------------------------*/
+.booking-one {
+    position: relative;
+    display: block;
+    padding: 90px 0 0;
+    z-index: 1;
+}
+
+.booking-one__wrap {
+    position: relative;
+    display: block;
+    max-width: 1680px;
+    width: 100%;
+    background-color: var(--gorent-black);
+    border-radius: 30px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.booking-one__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    opacity: .08;
+    z-index: -1;
+}
+
+.booking-one__left {
+    position: relative;
+    display: block;
+    margin-left: 150px;
+    margin-right: 180px;
+    margin-top: 50px;
+}
+
+.booking-one__img {
+    position: relative;
+    display: block;
+}
+
+.booking-one__img img {
+    width: 100%;
+    animation: leftRight 4s ease-in-out infinite;
+}
+
+.booking-one__shape-1 {
+    position: absolute;
+    top: 30px;
+    right: -239px;
+}
+
+.booking-one__shape-1 img {
+    width: auto;
+}
+
+.booking-one__right {
+    position: relative;
+    display: block;
+    margin-left: 60px;
+}
+
+.booking-one__content {
+    position: relative;
+    display: block;
+    background-color: var(--gorent-white);
+    border-bottom-left-radius: var(--gorent-bdr-radius);
+    border-bottom-right-radius: var(--gorent-bdr-radius);
+    border-bottom: 5px solid var(--gorent-base);
+}
+
+.booking-one__title-box {
+    position: relative;
+    display: block;
+    background-color: var(--gorent-base);
+    text-align: center;
+    padding: 17.5px 0;
+    z-index: 1;
+}
+
+.booking-one__title-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.booking-one__title {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.booking-one__form {
+    position: relative;
+    display: block;
+    padding: 55px 30px 60px;
+}
+
+.booking-one__form .row {
+    --bs-gutter-x: 20px;
+}
+
+.booking-one__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.booking-one__input-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gorent-black);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.booking-one__input-title span {
+    font-size: 18px;
+}
+
+.booking-one__input-box input[type="text"],
+.booking-one__input-box input[type="email"] {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--gorent-bdr-color);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gorent-gray);
+    display: block;
+}
+
+.booking-one__input-box .select-box {
+    width: 100%;
+}
+
+.booking-one__input-box .nice-select {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--gorent-bdr-color);
+    outline: none;
+    font-size: 16px;
+    color: var(--gorent-gray);
+    font-weight: 400;
+    border-radius: 25px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    float: none;
+}
+
+.booking-one__input-box .nice-select:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--gorent-bdr-color);
+    border-right: 2px solid var(--gorent-bdr-color);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.booking-one__input-box .nice-select .option {
+    color: var(--gorent-white);
+}
+
+.booking-one__input-box .nice-select .option.selected {
+    font-weight: 500;
+}
+
+.booking-one__input-box .nice-select .list {
+    background-color: var(--gorent-base);
+    border-radius: var(--gorent-bdr-radius);
+}
+
+.booking-one__input-box .nice-select .option:hover,
+.booking-one__input-box .nice-select .option.focus,
+.booking-one__input-box .nice-select .option.selected.focus {
+    color: var(--gorent-white);
+}
+
+.booking-one__btn-box {
+    position: relative;
+    display: block;
+}
+
+.booking-one__btn-box .thm-btn {
+    border: none;
+}
+
+
+
+
+
+
+
+#ui-datepicker-div.ui-widget-content {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid var(--gorent-black);
+    color: #252525;
+    font-size: 14px;
+    border-radius: 0px;
+    width: 270px;
+    padding: 5px;
+}
+
+#ui-datepicker-div.ui-datepicker .ui-datepicker-header {
+    background: var(--gorent-base) none repeat scroll 0 0;
+    border: 2px solid var(--gorent-base);
+    border-radius: 0;
+    color: var(--gorent-white);
+    font-weight: 700;
+    padding: 5px 0;
+    position: relative;
+}
+
+.ui-datepicker td a {
+    color: var(--gorent-black) !important;
+    text-align: center;
+    background-image: none !important;
+    background: #f5f5f5 !important;
+    border: 1px solid #f9f9f9 !important;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid var(--gorent-black) !important;
+    background: var(--gorent-black) !important;
+    color: var(--gorent-white) !important;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 5px;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    border-radius: 30%;
+    height: 20px;
+    position: absolute;
+    top: 7px;
+    width: 20px;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 5px;
+}
+
+.ui-datepicker .ui-datepicker-prev:hover,
+.ui-datepicker .ui-datepicker-next:hover {
+    top: 7px;
+    background: var(--gorent-white);
+    border: none;
+}
+
+.ui-datepicker table {
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 0 0 0.4em;
+    width: 100%;
+}
+
+.ui-datepicker th {
+    border: medium none;
+    font-weight: 600;
+    padding: 2px 3px;
+    text-align: center;
+}
+
+.ui-datepicker-calendar .ui-state-default:hover,
+.ui-datepicker-calendar .ui-state-default:active {
+    background: var(--gorent-black);
+    color: var(--gorent-white);
+    border-color: var(--gorent-black);
+}
+
+#ui-datepicker-div.ui-widget {
+    font-family: var(--gorent-font);
+}
+
+
+/*--------------------------------------------------------------
+# Booking Two
+--------------------------------------------------------------*/
+.booking-two {
+    position: relative;
+    display: block;
+    padding: 120px 0 0px;
+    z-index: 1;
+}
+
+.booking-two__left {
+    position: relative;
+    display: block;
+    margin-top: 54px;
+    z-index: 2;
+}
+
+.booking-two__left .booking-one__content {
+    box-shadow: 0px 10px 60px 0px rgb(0 0 0 / 7%);
+    border-radius: var(--gorent-bdr-radius);
+}
+
+.booking-two__left .booking-one__title-box {
+    border-top-left-radius: var(--gorent-bdr-radius);
+    border-top-right-radius: var(--gorent-bdr-radius);
+}
+
+.booking-two__right {
+    position: relative;
+    display: block;
+    margin-left: -120px;
+}
+
+.booking-two__img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: var(--gorent-bdr-radius);
+}
+
+.booking-two__img img {
+    width: 100%;
+    border-radius: var(--gorent-bdr-radius);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

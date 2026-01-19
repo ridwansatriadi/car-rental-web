@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+# Sliding Text One
+--------------------------------------------------------------*/
+.sliding-text-one {
+    position: relative;
+    display: block;
+    background-color: var(--gorent-base);
+    padding: 23px 0 22px;
+    z-index: 1;
+}
+
+.sliding-text-one__wrap {
+    position: relative;
+    display: block;
+}
+
+.sliding-text__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+
+.sliding-text__list li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 35px;
+}
+
+.sliding-text__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: var(--gorent-black);
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+    font-family: var(--gorent-font-two);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.sliding-text__title span {
+    position: relative;
+    font-size: 45px;
+}
+
+.sliding-text__title:before {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: var(--gorent-white);
+    white-space: nowrap;
+    content: attr(data-hover);
+    transition: all 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.87);
+}
+
+.sliding-text__list li:hover .sliding-text__title:before {
+    width: 100%;
+    color: var(--gorent-white);
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

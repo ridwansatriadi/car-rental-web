@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+# Download App One 
+--------------------------------------------------------------*/
+.download-app-one {
+    position: relative;
+    display: block;
+    background-color: var(--gorent-black);
+    padding: 120px 0 120px;
+    z-index: 1;
+}
+
+.download-app-one__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .10;
+    z-index: -1;
+}
+
+.download-app-one__inner {
+    position: relative;
+    display: block;
+}
+
+.download-app-one__inner .row {
+    align-items: center;
+}
+
+.download-app-one__content {
+    position: relative;
+    display: block;
+}
+
+.download-app-one__sub-title {
+    font-size: 20px;
+    color: var(--gorent-base);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.download-app-one__title {
+    font-size: 50px;
+    color: var(--gorent-base);
+    line-height: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.download-app-one__text {
+    font-size: 18px;
+    color: var(--gorent-white);
+    line-height: 28px;
+}
+
+.download-app-one__google-and-app-store {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 42px;
+}
+
+.download-app-one__google-and-app-store a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gorent-base);
+    padding: 15px 30px 15px;
+    border-radius: 10px;
+}
+
+.download-app-one__right {
+    position: relative;
+    display: block;
+}
+
+.download-app-one__img {
+    position: relative;
+    display: block;
+    max-width: 470px;
+    width: 100%;
+    margin-left: auto;
+}
+
+.download-app-one__img1 {
+    position: relative;
+    display: block;
+}
+
+.download-app-one__img1 img {
+    width: 100%;
+}
+
+.download-app-one-car__img {
+    position: absolute;
+    bottom: -85px;
+    right: 35px;
+    z-index: -1;
+}
+
+.download-app-one-car__img img {
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

@@ -1,0 +1,193 @@
+/*--------------------------------------------------------------
+# Process One
+--------------------------------------------------------------*/
+.process-one {
+    position: relative;
+    display: block;
+    padding: 120px 0 0;
+    counter-reset: count;
+    z-index: 1;
+}
+
+.process-one__single {
+    position: relative;
+    display: block;
+    background-color: var(--gorent-black);
+    border-radius: 20px;
+    padding: 45px 25px 33px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.process-one__single-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .05;
+    z-index: -1;
+}
+
+.process-one__icon-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.process-one__icon-shape {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    right: 80px;
+    height: 5px;
+    background-color: var(--gorent-white);
+    transform: translateY(-50%);
+    opacity: .20;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+.process-one__icon-shape:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+    background-color: var(--gorent-white);
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    transition: all 500ms ease;
+}
+
+.process-one__single:hover .process-one__icon-shape,
+.process-one__single:hover .process-one__icon-shape:before {
+    background-color: var(--gorent-base);
+    opacity: 1;
+}
+
+.process-one__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(var(--gorent-base-rgb), 1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.process-one__icon:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px solid rgba(var(--gorent-base-rgb), .20);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.process-one__icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: var(--gorent-black);
+    transition: all 500ms ease;
+}
+
+.process-one__single:hover .process-one__icon span {
+    -webkit-animation-name: wobble-horizontal-hover;
+    animation-name: wobble-horizontal-hover;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.process-one__count {
+    position: relative;
+    display: block;
+}
+
+.process-one__count::before {
+    position: relative;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(var(--gorent-white-rgb), .70);
+    font-family: var(--gorent-font-two);
+    counter-increment: count;
+    content: "0"counter(count);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.process-one__single:hover .process-one__count::before {
+    -webkit-text-stroke: 1px rgba(var(--gorent-base-rgb), 1);
+}
+
+.process-one__title {
+    color: var(--gorent-base);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 33px;
+    margin-bottom: 17px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.process-one__text {
+    color: rgba(var(--gorent-white-rgb), .70);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+/*--------------------------------------------------------------
+# Process Two
+--------------------------------------------------------------*/
+.process-two {
+    padding: 120px 0 90px;
+}
+
+/*--------------------------------------------------------------
+# Process Three
+--------------------------------------------------------------*/
+.process-three {
+    padding: 0px 0px 90px;
+}
+
+/*--------------------------------------------------------------
+# Services Page Process 
+--------------------------------------------------------------*/
+.services-page-process {
+    padding: 90px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

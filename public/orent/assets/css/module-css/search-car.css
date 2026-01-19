@@ -1,0 +1,262 @@
+/*--------------------------------------------------------------
+# Search Car
+--------------------------------------------------------------*/
+.search-car {
+    position: relative;
+    display: block;
+    padding: 0px 0px 0px;
+    z-index: 1;
+}
+
+.search-car__shape-1 {
+    position: absolute;
+    top: 150px;
+    left: -300px;
+    width: 730px;
+    height: 765px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 181, 29, 0.62) 0%, rgba(19, 18, 34, 0) 100%);
+    opacity: 0.4;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.search-car__shape-2 {
+    position: absolute;
+    top: -255px;
+    right: -300px;
+    width: 730px;
+    height: 765px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 181, 29, 0.62) 0%, rgba(19, 18, 34, 0) 100%);
+    opacity: 0.4;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.search-car__inner {
+    position: relative;
+    display: block;
+    background-color: rgba(var(--gorent-base-rgb), .10);
+    padding: 50px 60px 40px;
+    border-radius: var(--gorent-bdr-radius);
+    margin-right: 50px;
+}
+
+.search-car__tab-box {
+    position: relative;
+    display: block;
+}
+
+.search-car__tab-box .tab-buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-car__tab-box .tab-buttons .tab-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-car__tab-box .tab-buttons .tab-btn+.tab-btn {
+    margin-left: 0;
+}
+
+.search-car__tab-box .tab-buttons .tab-btn span {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--gorent-white);
+    background-color: var(--gorent-black);
+    padding: 17px 30px 17px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.search-car__tab-box .tab-buttons .tab-btn.active-btn span {
+    color: var(--gorent-black);
+}
+
+.search-car__tab-box .tab-buttons .tab-btn span:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: var(--gorent-base);
+    border-radius: 10px;
+    background-position: top bottom;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: background-color 0.7s ease;
+    transition: all 0.7s ease;
+    z-index: -1;
+}
+
+.search-car__tab-box .tab-buttons .tab-btn.active-btn span:before {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.search-car__tab-box .tabs-content {
+    position: relative;
+    display: block;
+}
+
+.search-car__tab-box .tabs-content .tab {
+    position: relative;
+    display: none;
+    -webkit-transform: translateY(35px);
+    -ms-transform: translateY(35px);
+    transform: translateY(35px);
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    z-index: 10;
+}
+
+.search-car__tab-box .tabs-content .tab.active-tab {
+    display: block;
+    margin-top: 0px;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+
+}
+
+.search-car__tab-box .tabs-content__inner {
+    position: relative;
+    display: block;
+    padding-top: 35px;
+}
+
+
+.search-car__form {
+    position: relative;
+    display: block;
+}
+
+.search-car__form .row {
+    --bs-gutter-x: 20px;
+}
+
+.search-car__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search-car__input-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--gorent-black);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.search-car__input-title span {
+    font-size: 18px;
+}
+
+.search-car__input-box input[type="text"],
+.search-car__input-box input[type="email"] {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(var(--gorent-black-rgb), .10);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gorent-gray);
+    display: block;
+}
+
+.search-car__input-box .select-box {
+    width: 100%;
+}
+
+.search-car__input-box .nice-select {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(var(--gorent-black-rgb), .10);
+    outline: none;
+    font-size: 16px;
+    color: var(--gorent-gray);
+    font-weight: 400;
+    border-radius: 25px;
+    line-height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    float: none;
+}
+
+.search-car__input-box .nice-select:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--gorent-gray);
+    border-right: 2px solid var(--gorent-gray);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.search-car__input-box .nice-select .option {
+    color: var(--gorent-white);
+}
+
+.search-car__input-box .nice-select .option.selected {
+    font-weight: 500;
+}
+
+.search-car__input-box .nice-select .list {
+    background-color: var(--gorent-base);
+    border-radius: var(--gorent-bdr-radius);
+}
+
+.search-car__input-box .nice-select .option:hover,
+.search-car__input-box .nice-select .option.focus,
+.search-car__input-box .nice-select .option.selected.focus {
+    color: var(--gorent-white);
+}
+
+.search-car__btn-box {
+    position: relative;
+    display: block;
+}
+
+.search-car__btn-box .thm-btn {
+    border: none;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

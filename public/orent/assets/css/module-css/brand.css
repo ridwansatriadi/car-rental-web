@@ -1,0 +1,134 @@
+/*--------------------------------------------------------------
+# Brand One
+--------------------------------------------------------------*/
+.brand-one {
+    position: relative;
+    display: block;
+    padding: 80px 0 80px;
+    border-bottom: 1px solid var(--gorent-bdr-color);
+    z-index: 1;
+}
+
+.brand-one__carousel {
+    position: relative;
+    display: block;
+}
+
+.brand-one__single {
+    position: relative;
+    display: block;
+    text-align: center;
+    z-index: 1;
+}
+
+.brand-one__img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brand-one__img>a>img {
+    width: auto !important;
+    position: relative;
+    opacity: .50;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+}
+
+.brand-one__img>a:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/*--------------------------------------------------------------
+# Brand Two
+--------------------------------------------------------------*/
+.brand-two {
+    position: relative;
+    display: block;
+    border-top: 1px solid var(--gorent-bdr-color);
+    border-bottom: 1px solid var(--gorent-bdr-color);
+    padding: 29px 0 29px;
+    z-index: 1;
+}
+
+.brand-two__left {
+    position: relative;
+    display: block;
+}
+
+.brand-two__text {
+    font-size: 22px;
+    color: var(--gorent-black);
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.brand-two__text span {
+    color: var(--gorent-base);
+    font-weight: 700;
+}
+
+.brand-two__right {
+    position: relative;
+    display: block;
+}
+
+.brand-two__carousel {
+    position: relative;
+    display: block;
+}
+
+.brand-two__single {
+    position: relative;
+    display: block;
+}
+
+.brand-two__img {
+    position: relative;
+    display: block;
+}
+
+.brand-two__img img {
+    width: auto !important;
+    margin: 0 auto;
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+    transform: scale(1);
+    filter: brightness(0.5);
+}
+
+.brand-two__img img:hover {
+    filter: brightness(0.9);
+    transform: scale(0.9);
+}
+
+
+/*--------------------------------------------------------------
+# Brand Three
+--------------------------------------------------------------*/
+.brand-three {
+    padding: 50px 0 80px;
+    border-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

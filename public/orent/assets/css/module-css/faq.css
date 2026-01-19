@@ -1,0 +1,344 @@
+/*--------------------------------------------------------------
+# Faq One
+--------------------------------------------------------------*/
+.faq-one {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 120px 0 120px;
+    z-index: 1;
+}
+
+.faq-one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(var(--gorent-extra-rgb), 0.1);
+    z-index: -1;
+}
+
+.faq-one__shape-1 {
+    position: absolute;
+    top: -100px;
+    left: -70px;
+    width: 730px;
+    height: 765px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 181, 29, 0.62) 0%, rgba(19, 18, 34, 0) 100%);
+    opacity: 0.4;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.faq-one__shape-2 {
+    position: absolute;
+    bottom: -255px;
+    right: 100px;
+    width: 730px;
+    height: 765px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 181, 29, 0.62) 0%, rgba(19, 18, 34, 0) 100%);
+    opacity: 0.4;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.faq-one__left {
+    position: relative;
+    display: block;
+}
+
+.faq-one__img-box {
+    position: relative;
+    display: block;
+    margin-right: 252px;
+}
+
+.faq-one__img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.faq-one__img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.faq-one__experience-box {
+    position: absolute;
+    bottom: 30px;
+    right: -70px;
+    background: linear-gradient(270deg, #FFB51D 45%, #ffffff 100%);
+    max-width: 180px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 30px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.faq-one__experience-year {
+    position: relative;
+    display: block;
+}
+
+.faq-one__experience-year h2 {
+    font-size: 50px;
+    color: var(--gorent-black);
+    font-weight: 700;
+    line-height: 1.2em !important;
+    font-family: var(--gorent-font-two) !important;
+}
+
+.faq-one__experience-text {
+    color: var(--gorent-black);
+    font-weight: 500;
+}
+
+.faq-one__right {
+    position: relative;
+    display: block;
+}
+
+.faq-one .faq-one-accrodion .accrodion {
+    position: relative;
+    display: block;
+    border: 1px solid rgba(var(--gorent-black-rgb), .15);
+    background: var(--gorent-white);
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-one .faq-one-accrodion .accrodion.active {
+    border: 1px solid rgba(var(--gorent-black-rgb), .15);
+    background: var(--gorent-white);
+}
+
+.faq-one .faq-one-accrodion .accrodion-title {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 23px 25px 23px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.faq-one .faq-one-accrodion .accrodion-title h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--gorent-black);
+    position: relative;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-one .faq-one-accrodion .accrodion+.accrodion {
+    margin-top: 20px;
+}
+
+.faq-one .faq-one-accrodion .accrodion-title h4::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--gorent-white);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    line-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(var(--gorent-base-rgb), 1);
+}
+
+.faq-one .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+    content: "\f107";
+    color: var(--gorent-white);
+    background-color: var(--gorent-black);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-one .faq-one-accrodion .accrodion-content {
+    position: relative;
+    padding-bottom: 28px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+}
+
+.faq-one .faq-one-accrodion .accrodion-content p {
+    margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Faq Two
+--------------------------------------------------------------*/
+.faq-two {
+    position: relative;
+    display: block;
+    padding: 120px 0 120px;
+    z-index: 1;
+}
+
+.faq-two__shape-1 {
+    position: absolute;
+    top: -100px;
+    left: -70px;
+    width: 730px;
+    height: 765px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 181, 29, 0.62) 0%, rgba(19, 18, 34, 0) 100%);
+    opacity: 0.4;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.faq-two__shape-2 {
+    position: absolute;
+    bottom: -255px;
+    right: 100px;
+    width: 730px;
+    height: 765px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 181, 29, 0.62) 0%, rgba(19, 18, 34, 0) 100%);
+    opacity: 0.4;
+    filter: blur(120px);
+    z-index: -1;
+}
+
+.faq-two .faq-one-accrodion .accrodion {
+    position: relative;
+    display: block;
+    border: 1px solid rgba(var(--gorent-black-rgb), .15);
+    background: var(--gorent-white);
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-two .faq-one-accrodion .accrodion.active {
+    border: 1px solid rgba(var(--gorent-black-rgb), .15);
+    background: var(--gorent-white);
+}
+
+.faq-two .faq-one-accrodion .accrodion-title {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 23px 25px 23px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.faq-two .faq-one-accrodion .accrodion-title h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--gorent-black);
+    position: relative;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-two .faq-one-accrodion .accrodion+.accrodion {
+    margin-top: 20px;
+}
+
+.faq-two .faq-one-accrodion .accrodion-title h4::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--gorent-white);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    line-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(var(--gorent-base-rgb), 1);
+}
+
+.faq-two .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+    content: "\f107";
+    color: var(--gorent-white);
+    background-color: var(--gorent-black);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-two .faq-one-accrodion .accrodion-content {
+    position: relative;
+    padding-bottom: 28px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+}
+
+.faq-two .faq-one-accrodion .accrodion-content p {
+    margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Faq Page
+--------------------------------------------------------------*/
+.faq-page {
+    padding: 120px 0 100px;
+}
+
+.faq-page__left {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.faq-page__right {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------
+# Page Header
+--------------------------------------------------------------*/
+.page-header {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: var(--gorent-black);
+    z-index: 1;
+}
+
+.page-header__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .20;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.page-header__shape-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    height: 87px;
+    z-index: -1;
+    animation: slide 50s linear infinite;
+    -webkit-animation: slide 50s linear infinite;
+}
+
+.page-header__inner {
+    position: relative;
+    display: block;
+    padding: 158px 0 167px;
+    z-index: 15;
+}
+
+.page-header__inner h3 {
+    font-size: 60px;
+    color: var(--gorent-white);
+    line-height: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.thm-breadcrumb__inner {
+    position: relative;
+    display: block;
+}
+
+.thm-breadcrumb {
+    position: relative;
+    display: block;
+}
+
+.thm-breadcrumb li {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--gorent-white);
+    text-transform: uppercase;
+    font-family: var(--gorent-font-two);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.thm-breadcrumb li+li {
+    margin-left: 5px;
+}
+
+.thm-breadcrumb li a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: var(--gorent-white);
+    text-transform: uppercase;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.thm-breadcrumb li:hover a {
+    color: var(--gorent-base);
+    opacity: 1;
+}
+
+.thm-breadcrumb li span {
+    font-size: 12px;
+    color: var(--gorent-base);
+}

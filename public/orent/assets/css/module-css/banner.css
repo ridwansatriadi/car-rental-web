@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------
+# Banner One
+--------------------------------------------------------------*/
+.banner-one {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: rgba(var(--gorent-extra-rgb), .30);
+    clip-path: polygon(50% 0%, 100% 0, 100% 81%, 81% 94%, 16% 94%, 0 100%, 0 0);
+    padding: 146px 0 177px;
+    z-index: 1;
+}
+
+.banner-one__shape-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .10;
+    mix-blend-mode: difference;
+    z-index: -1;
+}
+
+.banner-one__shape-1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 360px;
+    background-color: var(--gorent-base);
+    z-index: 1;
+}
+
+.banner-one__shape-1-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .10;
+    z-index: -1;
+}
+
+.banner-one__shape-2 {
+    position: absolute;
+    top: -400px;
+    bottom: -535px;
+    left: -290px;
+    width: 808px;
+    background-color: var(--gorent-base);
+    z-index: -1;
+    transform: rotate(-45deg);
+    opacity: .05;
+}
+
+.banner-one__inner {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.banner-one__content {
+    position: relative;
+    display: block;
+}
+
+.banner-one__sub-title {
+    font-size: 20px;
+    color: var(--gorent-black);
+    font-weight: 500;
+}
+
+.banner-one__title {
+    font-size: 60px;
+    line-height: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.banner-one__title span {
+    color: var(--gorent-base);
+}
+
+.banner-one__text {
+    color: rgba(var(--gorent-black-rgb), .70);
+}
+
+.banner-one__btn-box {
+    position: relative;
+    display: block;
+    margin-top: 42px;
+}
+
+.banner-one__img-one {
+    position: absolute;
+    bottom: 0;
+    right: -200px;
+}
+
+.banner-one__img-one img {
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

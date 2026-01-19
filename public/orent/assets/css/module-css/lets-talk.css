@@ -1,0 +1,99 @@
+/*==============================================
+    Lets Talk Start
+===============================================*/
+.lets-talk {
+    position: relative;
+    display: block;
+    background-color: var(--gorent-base);
+    overflow: hidden;
+    padding: 78px 0 81px;
+    z-index: 1;
+}
+
+.lets-talk__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .05;
+    z-index: -1;
+}
+
+.lets-talk__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lets-talk__title {
+    position: relative;
+    display: block;
+}
+
+.lets-talk__title p {
+    font-size: 20px;
+    color: var(--gorent-black);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.lets-talk__title h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-top: 17px;
+}
+
+.lets-talk__btn-boxes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lets-talk__btn-1 {
+    position: relative;
+    display: block;
+}
+
+.lets-talk__btn-1 .thm-btn {
+    background-color: var(--gorent-white);
+}
+
+.lets-talk__btn-2 {
+    position: relative;
+    display: block;
+}
+
+.lets-talk__btn-2 .thm-btn {
+    background-color: var(--gorent-black);
+    color: var(--gorent-white);
+}
+
+.lets-talk__btn-2 .thm-btn::after {
+    background-color: var(--gorent-white);
+}
+
+.lets-talk__btn-2 .thm-btn:hover {
+    color: var(--gorent-black);
+}
+
+
+
+
+
+
+
+
+
+/*==============================================
+    End
+===============================================*/

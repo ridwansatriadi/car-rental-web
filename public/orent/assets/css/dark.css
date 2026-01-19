@@ -1,0 +1,204 @@
+body,
+body .blog-one,
+.team-one,
+.team-one__buttons,
+.listing-one__car-rent-box,
+.blog-one__date span,
+.lets-talk__btn-1 .thm-btn::after,
+.faq-one .faq-one-accrodion .accrodion,
+.booking-one__content {
+    background-color: var(--gorent-black);
+}
+
+
+.booking-one__input-title,
+.about-one__progress-title,
+.main-menu .main-menu__list>li>a,
+.stricky-header .main-menu__list>li>a,
+.blog-one__read-more,
+.blog-one__date span,
+.blog-one__title a,
+.team-one__buttons-title a,
+.lets-talk__btn-1 .thm-btn:hover,
+.faq-one .faq-one-accrodion .accrodion-title h4,
+.testimonial-one__client-name a,
+.list-unstyled.pricing-one__points li .price p,
+.pricing-one__price,
+.pricing-one__title,
+.listing-one__car-rent,
+.listing-one__title a,
+.about-one__call-box-content h4 a,
+.section-title__title,
+.main-menu .main-menu__list>li.dropdown>a:after,
+.main-menu__search,
+.main-menu__cart,
+.main-menu__call-number a,
+.about-one__progress .count-text {
+    color: var(--gorent-white);
+}
+
+.main-menu .main-menu__list>li.current>a::after,
+.main-menu .main-menu__list>li:hover>a::after,
+.stricky-header .main-menu__list>li.current>a::after,
+.stricky-header .main-menu__list>li:hover>a::after {
+    color: var(--gorent-base);
+}
+
+.team-one__buttons-experience-years-text,
+.pricing-one__text {
+    color: var(--gorent-gray);
+}
+
+
+
+
+.team-one__buttons-experience-years {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.main-menu__wrapper-inner,
+.blog-one__single:hover,
+.blog-one__single,
+.team-one__inner,
+.faq-one::before,
+.popular-car-one,
+.call-one__inner-content:before,
+.pricing-one__single,
+.video-one,
+.listing-one__carousel.owl-carousel .owl-dots .owl-dot,
+.listing-one__content,
+.listing-one__tab-box .listing-one-tab-buttons .p-tab-btn,
+.counter-one__list li:nth-child(2) .counter-one__single,
+.why-choose-one__single-inner,
+.booking-one__wrap,
+.process-one__single,
+.services-one__single {
+    background-color: #1b1a28;
+}
+
+
+
+.pricing-one__shape-1,
+.pricing-one__shape-2,
+.about-one__progress .bar,
+.services-one__shape-2,
+.services-one__shape-1 {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+.blog-one__single,
+.team-one__buttons,
+.testimonial-one__single,
+.booking-one__input-box input[type="text"],
+.booking-one__input-box input[type="email"],
+.booking-one__input-box .nice-select {
+    border: 1px solid rgba(var(--gorent-white-rgb), .10);
+}
+
+.booking-one__input-box .nice-select:after {
+    border-bottom: 2px solid var(--gorent-gray);
+    border-right: 2px solid var(--gorent-gray);
+}
+
+
+.about-one__shape-2 {
+    filter: opacity(0.10);
+}
+
+
+.process-one__single-bg {
+    opacity: .03;
+}
+
+
+.blog-one__shape-1,
+.blog-one__shape-2,
+.team-one__shape-1,
+.team-one__shape-2,
+.faq-one__shape-1,
+.faq-one__shape-2,
+.why-choose-one__shape-1,
+.why-choose-one__shape-2 {
+    opacity: 0.1;
+}
+
+
+
+
+.testimonial-one__carousel.owl-theme .owl-nav .owl-next:hover,
+.testimonial-one__carousel.owl-theme .owl-nav .owl-prev:hover,
+.testimonial-one__single:hover .testimonial-one__quote span,
+.pricing-one__single:hover .pricing-one__icon-box span,
+.thm-btn:hover {
+    color: var(--gorent-black);
+}
+
+
+
+
+
+
+.testimonial-one__carousel.owl-theme .owl-nav .owl-next:hover,
+.testimonial-one__carousel.owl-theme .owl-nav .owl-prev:hover,
+.testimonial-one__single:hover .testimonial-one__quote,
+.pricing-one__icon-box::before,
+.thm-btn::after {
+    background-color: var(--gorent-white);
+}
+
+
+.blog-one__carousel.owl-theme .owl-nav .owl-next:hover,
+.blog-one__carousel.owl-theme .owl-nav .owl-prev:hover {
+    background-color: var(--gorent-white) !important;
+    color: var(--gorent-black) !important;
+}
+
+
+.listing-one__carousel.owl-carousel .owl-dot.active {
+    background-color: var(--gorent-base);
+}
+
+
+
+
+.brand-one,
+.pricing-one__price-and-icon-box {
+    border-bottom: 1px solid rgba(var(--gorent-white-rgb), .10);
+}
+
+.faq-one .faq-one-accrodion .accrodion.active {
+    border: 1px solid rgba(var(--gorent-white-rgb), 0.05);
+    background: rgba(var(--gorent-white-rgb), 0.05);
+}
+
+.team-one {
+    background: none;
+}
+
+.brand-one__img {
+    filter: invert(1);
+}
+
+
+.main-menu .mobile-nav__toggler:hover {
+    color: var(--gorent-white);
+}
+
+.about-one__call-box-icon:hover {
+    background-color: var(--gorent-white);
+}
+
+.about-one__call-box-icon:hover span {
+    color: var(--gorent-black);
+}
+
+.services-one__single:hover::after {
+    background-color: #1b1a28;
+}
+
+
+
+
+/* The End */
